@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Array from Input</title>
+        
+        <style>
+            body { background: #444; color: #fff;}
+        </style>
+        
+        <script>
+            var _array_ = [];
+            
+            function insert(val) {
+                if (!val.trim().length || _array_.includes(val)) {
+                    return;
+                    } else {
+                    _array_.push(val);
+                }
+            }
+            
+            // !_array_.length
+            function makeList(listData) {
+                listContainer = document.querySelector('#arrdiv');
+                listElement = document.createElement('ul');
+                listElement.classList.add("unordered-list-items");
+                numberOfListItems = listData.length;
+                var _temp_ = document.createDocumentFragment()
+                ;
+                for (i = 0; i < numberOfListItems; ++i) {
+                    listItem = document.createElement('li');
+                    listItem.innerHTML = listData[i];
+                    _temp_.appendChild(listItem);
+                }
+                listElement.appendChild(_temp_);
+                listContainer.innerHTML='';
+                listContainer.appendChild(listElement);
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+    
+        <h1>Array from Input</h2>
+        <h4>All array must be different and not a blank space, or it will not be added!</h4>
+        <b>Name</b>
+        <input id="array_input" type="text" name="name"/>
+        <input type="button" Value="Add Into Array" onclick="insert(document.querySelector('#array_input').value) , makeList(_array_);" />
+        <input type="button" Value="Remove 1 Array" onclick="_array_.pop() , makeList(_array_);" />
+        <input type="button" Value="Delete All"     onclick="_array_.splice(0, _array_.length) , makeList(_array_);" />
+        <div id="arrdiv"></div>
+        
+    </body>
+</html>                                                                                                                                                                                    
