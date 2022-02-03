@@ -13,11 +13,11 @@ A Javascript (and a little ES6) Client-Sided App to Generate and Visualize nCr (
 # Screenshot
 
 * ### Preview
-![](./example/pages.png)
+[![](./example/pages.png)](https://htmlpreview.github.io/?https://github.com/jxxvxs/nCr-Combinations-Vizualizer/blob/main/index.html)
 
 * ### Generated CSV
 It's possible to generate 705432 rows of data, and possibly more depends on your Browser and Device used.
-![](./example/csvdata.png)
+[![](./example/csvdata.png)](https://raw.githubusercontent.com/jxxvxs/nCr-Combinations-Vizualizer/main/example/ncrdata.csv)
 
 * ### Generated Table
-![](./example/ncrdata.png)
+[![](./example/ncrdata.png)](https://htmlpreview.github.io/?https://github.com/jxxvxs/nCr-Combinations-Vizualizer/blob/main/example/ncrdata.html)
