@@ -1,5 +1,5 @@
 # nCr-Combinations-Vizualizer
-A Javascript (and a little ES6) Client-Sided App to Generate and Visualize nCr (Combinations) Mathematically using Array.
+A Javascript (and a little ES6) Client-Sided Tools to Generate and Visualize nCr (Combinations) Mathematically using Array.
 [Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/nCr-Combinations-Vizualizer/blob/main/index.html)
 
 # References
